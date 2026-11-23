@@ -21,3 +21,7 @@ BASE_URL=http://localhost:3000 npm run e2e   # with the dev server running
 ```
 
 Demo built by Vinil Polepalli. Not affiliated with or endorsed by OpenTag.
+
+## Deployment
+
+Production deploys run on Vercel from the main branch, with the database on Neon Postgres connected through the Vercel integration.
