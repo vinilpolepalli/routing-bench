@@ -1,0 +1,13 @@
+{
+  "note": "Seeded sample inbox: fictional workspace messages written for this demo. Not real customer data.",
+  "requests": [
+    { "id": "req-standup", "channel": "#eng-general", "author": "Maya", "tag": "summarize", "text": "Can you summarize the standup thread from this morning into three bullets for the team wiki?" },
+    { "id": "req-refund", "channel": "#support", "author": "Jon", "tag": "draft", "text": "Draft a reply to the customer in ticket 4821: their refund was approved yesterday, apologize for the delay, keep it short and warm." },
+    { "id": "req-sql", "channel": "#data", "author": "Priya", "tag": "code", "text": "This query double counts orders after the refunds table join. Rewrite it so each order appears once and explain why the duplication happened: SELECT o.id, SUM(r.amount) FROM orders o LEFT JOIN refunds r ON r.order_id = o.id GROUP BY o.id" },
+    { "id": "req-incident", "channel": "#eng-alerts", "author": "Leo", "tag": "incident", "text": "URGENT: deploy is blocked. The migration fails with a foreign key error on table audit_events, and the stack trace points at the backfill job. What are the fastest safe ways to unblock, and what do we check before retrying?" },
+    { "id": "req-plan", "channel": "#product", "author": "Sara", "tag": "analysis", "text": "Compare two launch options for the Slack app: ship the summarizer to all beta workspaces now, or gate it behind the new settings page for two weeks? Weigh support load, onboarding friction, and what we can measure in each path. End with a recommendation." },
+    { "id": "req-meeting", "channel": "#design", "author": "Ana", "tag": "schedule", "text": "Find a 30 minute slot this week that works for me, Tom and Riya, and draft the calendar invite text." },
+    { "id": "req-review", "channel": "#eng-general", "author": "Ken", "tag": "code", "text": "Review this function for edge cases before I merge: export function chunk<T>(arr: T[], n: number) { const out = []; for (let i = 0; i < arr.length; i += n) out.push(arr.slice(i, i + n)); return out; }" },
+    { "id": "req-tone", "channel": "#people", "author": "Mia", "tag": "rewrite", "text": "Rewrite this so it sounds firm but not cold: your expense report is late again and this is the last reminder." }
+  ]
+}

@@ -1,0 +1,6 @@
+lanerisk.db*
+.next
+node_modules
+.vercel
+.env*
+*.db*
